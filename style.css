@@ -1,0 +1,56 @@
+:root {
+  --G_color: ;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background: var(--G_color);
+  transition: .5s;
+font-family: Tahoma;
+}
+
+section {
+  background-color: rgba(0, 0, 0, .7);
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+}
+
+section h1 {
+  color: #fff;
+  font-size: 40px;
+}
+
+button {
+  border: none;
+  background: #549DD1;
+  border-radius: 5px;
+  color: var(--G_color);
+  padding: 10px 15px;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+section h1 span {
+  user-select: none;
+  position: relative;
+  color: var(--G_color);
+}
+
+section h1 span:hover::after {
+  content: attr(data-info);
+  position: absolute;
+  padding: 5px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, .5);
+  font-size: 25px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  color: #64B7D5;
+}
